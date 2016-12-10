@@ -1,0 +1,15 @@
+---
+
+language: java
+jdk:
+  - openjdk7
+
+deploy:
+  provider: releases
+  api_key:
+    secure: TVRYdZwOGnjl2pAITnAmjHAEoD24KsYYQjrlm0k5jPu5lurT/arYUGAL2ls5+554TP7uqca8WJ1eb0qWKADa5eO1hjaXcI2a6TPEIJhCrN/bdQhj6LQzsyB7znKnlZ15aDWu/QqXQkP7arImlMUxH2gHm8+jjWdasZznaMmVWlK3u+D958gwovyASw18m+eBTnwZAa1nBEbFaV3WjLmK+vyWoTNR6sVHinhWhJBjXvnMAq70wtI8FaEcKyz284tl55yieLRr8AXEvjR3tvvNRs/Zj30AuvvSwEkloLk21qnqp7HdrGfUlN+P57ddOA77uZUg8B7+eQgk8Qrq8ZsIuwX7XTG/HPSjcyHyE4UUGaG/eZLTl2QmeYKxu9UpvW20+22Aj6Vf41sg3hC/yn9cIBe1pAOo43EiU7/Lsg6J+dNT/x24+Byk/flPuqxgF+f88E10vgSAvQJ5C8xTKsoDrOwTXsCxo63C0YaKA6AM63nKeWppL9KfLNDSMpOMqmQY6QtR7CHn+Ez2YJbD/qOo4BIehhqY1KC7UxR3hTKMuyq1e5BLrL/HZDIf0MQaiDO1l3r2ljGhexCOSbyICyggpiVGqu9UwtUAIxz6+8ExGQJPp85nPKx0fR4t8FMX/1+GVM3S5bkARLRTWE0mtk/IWwhsNC8zCL88M0dUc9xN+es=
+  file: build/libs/server-plugin-metals.jar
+  on:
+    repo: konstructs/server-plugin-metals
+    tags: true
+    jdk: openjdk7
