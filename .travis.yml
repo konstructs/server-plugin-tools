@@ -2,7 +2,7 @@
 
 language: java
 jdk:
-  - openjdk7
+  - oraclejdk8
 
 deploy:
   provider: releases
@@ -11,5 +11,5 @@ deploy:
   file: build/libs/server-plugin-tools.jar
   on:
     tags: true
-    jdk: openjdk7
+    jdk: oraclejdk8
     repo: konstructs/server-plugin-tools
